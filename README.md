@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Contacts and Appointments Management App
+This project is a React application designed to manage contacts and appointments. It provides functionalities to add new contacts and appointments, display them, and ensure data integrity through duplication checks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Add new contacts with name, phone number, and email.
+Add new appointments with title, contact, date, and time.
+Display list of contacts and appointments.
+Prevent duplicate contacts based on name.
+Validate phone number format in contact form.
+Use of controlled components for form inputs.
+Use of React Router for navigation between Contacts and Appointments pages.
+Technologies Used
+React
+React Router
+HTML/CSS
 
-## Available Scripts
+Usage
+Add Contact:
 
-In the project directory, you can run:
+Navigate to the Contacts page.
+Fill out the form with the contact's name, phone number, and email.
+Click "Add Contact" to save the contact.
+Add Appointment:
 
-### `npm start`
+Navigate to the Appointments page.
+Fill out the form with the appointment's title, select a contact, date, and time.
+Click "Add Appointment" to save the appointment.
+View Contacts and Appointments:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Both Contacts and Appointments are displayed on their respective pages.
+Contacts are shown in a list with basic details.
+Appointments are shown in a list with title, contact name, date, and time.
+Components
+ContactsPage:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Manages the state for contacts.
+Renders the ContactForm for adding new contacts.
+Displays the list of contacts using TileList.
+AppointmentsPage:
 
-### `npm test`
+Manages the state for appointments.
+Renders the AppointmentForm for adding new appointments.
+Displays the list of appointments using TileList.
+ContactForm:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Renders a form for adding new contacts.
+Uses controlled components for input fields.
+Handles submission and form validation.
+AppointmentForm:
 
-### `npm run build`
+Renders a form for adding new appointments.
+Includes a ContactPicker component for selecting a contact.
+Uses controlled components for input fields.
+Handles submission and form validation.
+TileList:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Receives an array of objects and renders Tile components for each object.
+Used to display lists of contacts and appointments.
+Tile:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Receives props (name and description) and renders a tile component.
+Used by TileList to display individual contact or appointment details.
+Contact
+For any issues or questions, please feel free to reach out to me.
